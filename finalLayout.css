@@ -1,0 +1,164 @@
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+.container {
+  width: 100%;
+}
+
+.topLeft {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  float: left;
+  background-color: #ffaaff;
+}
+
+.topCenter {
+  position: static;
+  display: inline-block;
+  overflow: none;
+  width: 50%;
+  height: 100%;
+  padding-left: 0px;
+  float: none;
+  clear: none;
+  background-color: #aaffff;
+}
+
+.topRight {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  float: right;
+  background-color: #ffffaa;
+}
+
+.topHalf {
+  display: block;
+  width: 90%;
+  height: 256px;
+  float: none;
+  clear: none;
+  margin: 0 auto;
+}
+
+.bottomHalf {
+  height: 256px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sectionContent {
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+.uiSection {
+  display: inline-block;
+  width: 30%;
+  height: 20%;
+}
+
+.uiSectionRow {
+  width: 100%;
+  height: 50%;
+}
+
+.tlHeader {
+  display: block;
+  height: 71px;
+}
+
+/** Start: Tab content styling **/
+.tabRow {
+	display:block;
+	
+}
+
+.tabBody {
+	
+}
+
+.tabTitle {
+	font-size: 25px;
+	text-align: center;
+}
+/** End: Tab content styling **/
+
+/** Start: to style botHalfNav tabs **/
+
+.botHalfNav {
+  margin-bottom: 18px;
+  margin-left: 0;
+  list-style: none;
+}
+
+.botHalfNav > li > a {
+  display: block;
+}
+
+.botHalfTab{
+  *zoom: 1;
+}
+
+.botHalfTab:before,
+.botHalfTab:after {
+  display: table;
+  content: "";
+}
+
+.botHalfTab:after {
+  clear: both;
+}
+
+.botHalfTab > li {
+  float: left;
+}
+
+.botHalfTab > li > a {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+
+.botHalfTab > li {
+  margin-bottom: -1px;
+}
+
+.botHalfTab > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 18px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px 4px 0 0;
+	 -moz-border-radius: 4px 4px 0 0;
+		  border-radius: 4px 4px 0 0;
+}
+
+.botHalfTab > li > a:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+
+.botHalfTab > .active > a,
+.botHalfTab > .active > a:hover {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.botHalfTab-content.active{
+	display: block;
+}
+
+.botHalfTab-content.hide{
+	display: none;
+}
+
+/** End: to style botHalfNav tabs **/
